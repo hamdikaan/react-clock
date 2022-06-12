@@ -1,10 +1,11 @@
 import "./Timer.scss";
+import { Frame } from "../../components";
 
 const Timer = () => {
   return (
-    <div>
+    <Frame>
       <h1>Timer</h1>
-    </div>
+    </Frame>
   );
 };
 

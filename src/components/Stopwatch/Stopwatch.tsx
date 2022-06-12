@@ -1,10 +1,11 @@
 import "./Stopwatch.scss";
+import { Frame } from "../../components";
 
 const Stopwatch = () => {
   return (
-    <div>
+    <Frame>
       <h1>Stopwatch</h1>
-    </div>
+    </Frame>
   );
 };
 

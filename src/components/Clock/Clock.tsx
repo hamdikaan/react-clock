@@ -1,10 +1,11 @@
 import "./Clock.scss";
+import { Frame } from "../../components";
 
 const Clock = () => {
   return (
-    <div>
+    <Frame>
       <h1>Clock</h1>
-    </div>
+    </Frame>
   );
 };
 
