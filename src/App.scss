@@ -1,1 +1,55 @@
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
 
+  .panel {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90%;
+    justify-content: center;
+
+    .navbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 1.25rem;
+      margin-bottom: 2rem;
+      padding: 1rem 2.5rem;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+      font-size: 1.2rem;
+
+      a:not(:last-child) {
+        text-decoration: none;
+        color: #000;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
+
+      a:last-child > svg {
+        color: #000;
+        font-size: 1.7rem;
+        transform: rotate(45deg);
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
